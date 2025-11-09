@@ -1,0 +1,21 @@
+.btn,
+.btn:link,
+.btn:focus,
+.btn:visited,
+.wp-element-button {
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  padding: 0 10px;
+  background: transparent;
+  border: 1px solid $university-blue;
+  line-height: 1.125rem;
+  font-weight: 700;
+  @include easy-transform-fast;
+  overflow: hidden;
+  text-decoration: none;
+  &:hover {
+    color: $museum-orange;
+    border: 1px solid $museum-orange;
+  }
+}

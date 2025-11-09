@@ -1,0 +1,11 @@
+.info {
+  background-color: $museum-orange;
+  color: $white;
+  a {
+    color: $white;
+    @include easy-transform-fast;
+    &:hover {
+      color: $university-blue;
+    }
+  }
+}

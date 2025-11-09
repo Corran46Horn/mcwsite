@@ -1,0 +1,119 @@
+nav {
+  background-color: $white;
+  width: 100%;
+  z-index: 99;
+  .name-wrap {
+    padding: 21px 0;
+    display: block;
+    color: $black;
+  }
+  .menu:not(.mobile-menu) {
+    list-style: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    li {
+      float: right;
+      a {
+        padding: 60px 20px;
+        display: block;
+        @include font-size(20);
+        @include line-height(24);
+        @include uppercase;
+        @include easy-transform-fast;
+        color: $black;
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          @include easy-transform-fast;
+          width: fit-content;
+          bottom: 50px;
+          height: 2px;
+          background: $cityBlue;
+          left: -50px;
+          opacity: 0;
+          width: auto;
+        }
+      }
+      &:hover {
+        a {
+          color: $cityBlue;
+          &::after {
+            left: 20px;
+            right: 20px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .sub-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: $black;
+      li {
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+  .hamburger {
+    position: absolute;
+    top: 15px;
+    right: 0;
+  }
+}
+.sidenav {
+  position: fixed;
+  background-color: $white;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  @include easy-transform-fast;
+  z-index: 9999;
+  &.open {
+    left: 0px;
+  }
+  .hamburger {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    .hamburger-inner,
+    .hamburger-inner::after,
+    .hamburger-inner::before {
+      background-color: $black;
+    }
+  }
+  .menu-bg-wrap {
+    background-position: left bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: calc(100% - 67px);
+    overflow: scroll;
+    padding-top: 60px;
+    .mobile-menu {
+      float: none;
+      @include easy-transform-fast;
+      list-style: none;
+      li {
+        float: none;
+        display: block;
+        padding: 10px 0;
+        a {
+          color: $black;
+          text-align: left;
+          font-weight: 400;
+          padding: 15px 0;
+          display: block;
+          @include easy-transform-fast;
+          @include uppercase;
+        }
+      }
+    }
+  }
+}
