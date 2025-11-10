@@ -399,7 +399,8 @@ nav .hamburger {
 }
 
 footer {
-  background-color: #fff;
+  background-color: #012d5b;
+  color: #fff;
 }
 
 .footer-top {
@@ -412,7 +413,6 @@ footer {
 
 .footer-bottom {
   position: relative;
-  background-color: #fff;
 }
 
 .about-header {
@@ -489,6 +489,7 @@ footer {
 .accessibility-wrap .font-list {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 .accessibility-wrap .font-list p {
   margin: 0 20px 0 0;
@@ -662,6 +663,17 @@ body.contrast .name-wrap {
 }
 .info a:hover {
   color: #053d78;
+}
+
+.partners {
+  padding: 100px 0;
+}
+.partners .partner-wrap {
+  display: flex;
+  align-items: center;
+}
+.partners .partner-wrap img {
+  max-width: 250px;
 }
 
 .text-section {
