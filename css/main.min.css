@@ -237,6 +237,11 @@ strong {
   padding: 60px 0;
 }
 
+.cook {
+  position: absolute;
+  max-height: 250px;
+}
+
 .btn,
 .btn:link,
 .btn:focus,
@@ -267,7 +272,6 @@ strong {
 }
 
 nav {
-  background-color: #fff;
   width: 100%;
   z-index: 99;
 }
@@ -399,20 +403,11 @@ nav .hamburger {
 }
 
 footer {
-  background-color: #012d5b;
-  color: #fff;
+  color: #012d5b;
 }
 
 .footer-top {
   padding: 30px 0 15px;
-}
-
-.footer-bottom {
-  padding: 50px 0;
-}
-
-.footer-bottom {
-  position: relative;
 }
 
 .about-header {
