@@ -1,26 +1,30 @@
-    <section class="info">
-      <div class="container">
-        <div class="row footer-top">
-          <div class="col col-12">
-            <p>Kamila Kowalska</p>
-            <p>
-              <a href="mailto:kamila.kowalska@ug.edu.pl"
-                >kamila.kowalska@ug.edu.pl</a
-              >
-            </p>
-            <p>© 2024 by Kamila Kowalska. Wszystkie prawa zastrzeżone</p>
-          </div>
-        </div>
-      </div>
-    </section>
     <footer>
       <div class="container">
-        <div class="row footer-bottom">
-          <div class="col col-12">
-            <div class="logo-wrap">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/loga.png" alt="" />
+        <div class="row footer-top">
+          <div class="col col-12 col-md-4">
+            <p>Maciej Wiśniewski</p>
+            <p>
+              <a href="mailto:mc.wisniewski@gmail.com"
+                >mc.wisniewski@gmail.com</a
+              >
+            </p>
+            <p>Copyright by Maciej Wiśniewski</p>
+          </div>
+          <div class="col col-12 col-md-4">
+            <div class="image-wrap center">
+              <img src="images/Postaci-01.png" alt="" />
             </div>
           </div>
+          <div class="col col-12 col-md-4"></div>
+        </div>
+      </div>
+      <div class="row footer-bottom">
+        <div class="col col-12 col-md-4">
+          <div class="image-wrap left"></div>
+        </div>
+        <div class="col col-12 col-md-4"></div>
+        <div class="col col-12 col-md-4">
+          <div class="image-wrap right"></div>
         </div>
       </div>
     </footer>

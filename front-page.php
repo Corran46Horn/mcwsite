@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+<div class="container">
+  <?php the_content(); ?>
+</div>
 <section class="blog-posts">
   <div class="container">
     <div class="row">
@@ -26,7 +29,7 @@
           ?>
           <div class="text-wrap">
             <p class="header"><?php echo the_title(); ?></p>
-            <p><?php pll_e('read'); ?></p>
+            <p><?php echo('czytaj'); ?></p>
           </div>
         </a>
       </div>
@@ -38,7 +41,4 @@
     </div>
   </div>
 </section>
-<div class="container">
-  <?php the_content(); ?>
-</div>
 <?php get_footer(); ?>

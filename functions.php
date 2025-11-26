@@ -1,12 +1,12 @@
 <?php
 
-include_once( 'gutenberg-blocks.php' );
+// include_once( 'gutenberg-blocks.php' );
 
 function register_theme_menus() {
   register_nav_menus(
     array(
-      'main' => __('Main', 'kornel'),
-      'footer' => __('Footer', 'kornel'),
+      'main' => __('Main', 'mac'),
+      'footer' => __('Footer', 'mac'),
     )
   );
 }
@@ -44,15 +44,15 @@ add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
 
 function wpdocs_codex_member_init() {
   $labels = array(
-    'name'                  => _x( 'Wizyta studyjna', 'Post type general name', 'kornel' ),
-    'singular_name'         => _x( 'Wizyta studyjna', 'Post type singular name', 'kornel' ),
-    'menu_name'             => _x( 'Wizyta studyjna', 'Admin Menu text', 'kornel' ),
-    'name_admin_bar'        => _x( 'Wizyta studyjna', 'Add New on Toolbar', 'kornel' ),
-    'add_new'               => __( 'Dodaj nową wizytę studyjną', 'kornel' ),
-    'add_new_item'          => __( 'Dodaj nową wizytę studyjną', 'kornel' ),
-    'new_item'              => __( 'Nowa wizyta', 'kornel' ),
-    'edit_item'             => __( 'Edytuj dane', 'kornel' ),
-    'view_item'             => __( 'Zobacz', 'kornel' ),
+    'name'                  => _x( 'Wizyta studyjna', 'Post type general name', 'mac' ),
+    'singular_name'         => _x( 'Wizyta studyjna', 'Post type singular name', 'mac' ),
+    'menu_name'             => _x( 'Wizyta studyjna', 'Admin Menu text', 'mac' ),
+    'name_admin_bar'        => _x( 'Wizyta studyjna', 'Add New on Toolbar', 'mac' ),
+    'add_new'               => __( 'Dodaj nową wizytę studyjną', 'mac' ),
+    'add_new_item'          => __( 'Dodaj nową wizytę studyjną', 'mac' ),
+    'new_item'              => __( 'Nowa wizyta', 'mac' ),
+    'edit_item'             => __( 'Edytuj dane', 'mac' ),
+    'view_item'             => __( 'Zobacz', 'mac' ),
   );
   $args = array(
     'labels'             => $labels,
@@ -75,8 +75,3 @@ function wpdocs_codex_member_init() {
 add_action( 'init', 'wpdocs_codex_member_init' );
 
 
-// POLYLANG strings // 
-// <?php pll_e('ask');? > 
-add_action('init', function() {
-  pll_register_string('read', 'read');
-});
