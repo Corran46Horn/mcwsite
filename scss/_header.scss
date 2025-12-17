@@ -61,7 +61,7 @@ nav {
   }
   .hamburger {
     position: absolute;
-    top: 15px;
+    top: 30%;
     right: 0;
   }
 }
@@ -104,12 +104,14 @@ nav {
         padding: 10px 0;
         a {
           color: $black;
-          text-align: left;
-          font-weight: 400;
+          text-align: center;
+          font-weight: 600;
           padding: 15px 0;
           display: block;
           @include easy-transform-fast;
           @include uppercase;
+          @include font-size(32);
+          @include line-height(40);
         }
       }
     }

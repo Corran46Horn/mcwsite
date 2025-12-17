@@ -337,7 +337,7 @@ nav .menu:not(.mobile-menu) .sub-menu li a {
 }
 nav .hamburger {
   position: absolute;
-  top: 15px;
+  top: 30%;
   right: 0;
 }
 
@@ -390,8 +390,8 @@ nav .hamburger {
 }
 .sidenav .menu-bg-wrap .mobile-menu li a {
   color: #000;
-  text-align: left;
-  font-weight: 400;
+  text-align: center;
+  font-weight: 600;
   padding: 15px 0;
   display: block;
   -webkit-transition: all 0.3s ease-in-out;
@@ -399,6 +399,8 @@ nav .hamburger {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
 footer {
@@ -609,9 +611,21 @@ body.contrast .name-wrap {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1600px) {
+  .blog-posts .site-wrap {
+    flex-direction: row;
+  }
 }
 .blog-posts .site-wrap img {
   max-height: 100px;
+  margin: 0 0 10px;
+}
+@media only screen and (min-width: 1600px) {
+  .blog-posts .site-wrap img {
+    margin: 0;
+  }
 }
 .blog-posts .site-wrap.kmil {
   background-color: #999900;
@@ -635,6 +649,9 @@ body.contrast .name-wrap {
   background-image: url("../images/wc.png");
   background-size: cover;
   background-position: center;
+}
+.blog-posts .site-wrap.read:hover {
+  transform: scale(1.1);
 }
 .blog-posts .menu:not(.mobile-menu) {
   list-style: none;
