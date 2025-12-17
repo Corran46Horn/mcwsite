@@ -44,6 +44,44 @@
       }
     }
   }
+  .site-wrap {
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
+    @include easy-transform-fast;
+    color: black;
+    padding: 75px 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    img {
+      max-height: 100px;
+    }
+    &.kmil {
+      background-color: #999900;
+      &:hover {
+        background-color: #6c6d07;
+      }
+    }
+    &.lib {
+      background-color: #006acb;
+      &:hover {
+        background-color: #0056a7;
+      }
+    }
+    &.lit {
+      background-color: #ff6900;
+      &:hover {
+        background-color: #fcb900;
+      }
+    }
+    &.read {
+      background-image: url('../images/wc.png');
+      background-size: cover;
+      background-position: center;
+    }
+  }
   .menu:not(.mobile-menu) {
     list-style: none;
     li {
@@ -90,6 +128,12 @@
           color: $white;
         }
       }
+    }
+  }
+  &.posters {
+    .col {
+      padding: 0;
+      margin: 0;
     }
   }
 }

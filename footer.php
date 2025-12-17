@@ -12,7 +12,6 @@
           </div>
           <div class="col col-12 col-md-4">
             <div class="image-wrap center">
-              <img src="images/Postaci-01.png" alt="" />
             </div>
           </div>
           <div class="col col-12 col-md-4"></div>
