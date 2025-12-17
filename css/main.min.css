@@ -276,7 +276,6 @@ nav {
   z-index: 99;
 }
 nav .name-wrap {
-  padding: 21px 0;
   display: block;
   color: #000;
 }
@@ -291,7 +290,7 @@ nav .menu:not(.mobile-menu) li {
   float: right;
 }
 nav .menu:not(.mobile-menu) li a {
-  padding: 60px 20px;
+  padding: 20px;
   display: block;
   font-size: 1.25rem;
   line-height: 1.5rem;

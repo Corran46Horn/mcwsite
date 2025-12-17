@@ -1,0 +1,15 @@
+    front page
+    kafelki
+    "aktualności",
+    najnowsze posty
+    "o projekcie",
+    content 
+    "partnerzy",
+    loga i linki i opisy 
+    "galeria"
+    
+    https://www.klubmil.pl/
+    https://biblioteka.wroc.pl
+    https://literatura.wroclaw.pl
+
+    

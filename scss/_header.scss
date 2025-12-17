@@ -2,7 +2,6 @@ nav {
   width: 100%;
   z-index: 99;
   .name-wrap {
-    padding: 21px 0;
     display: block;
     color: $black;
   }
@@ -15,7 +14,7 @@ nav {
     li {
       float: right;
       a {
-        padding: 60px 20px;
+        padding: 20px;
         display: block;
         @include font-size(20);
         @include line-height(24);

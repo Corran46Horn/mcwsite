@@ -4,8 +4,8 @@
           <div class="col col-12 col-md-4">
             <p>Maciej Wiśniewski</p>
             <p>
-              <a href="mailto:mc.wisniewski@gmail.com"
-                >mc.wisniewski@gmail.com</a
+              <a href="mailto:wroclawczyta@klubmil.pl"
+                >wroclawczyta@klubmil.pl</a
               >
             </p>
             <p>Copyright by Maciej Wiśniewski</p>

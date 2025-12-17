@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/main.min.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/main.min.css?v=1" />
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/slick.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/js-cookie@rc"></script>
@@ -99,15 +99,12 @@
     <nav id="nav">
       <div class="container nav-container">
         <div class="row">
-          <div class="col col-12">
-            <div class="diverity-wrap"></div>
-          </div>
-          <div class="col col-10 col-lg-2">
+          <div class="col col-10 col-lg-4">
             <a class="name-wrap" href="<?php echo home_url();?>">
               <img src="<?php echo get_template_directory_uri(); ?>/images/logotyp_WC.png" alt="" />
             </a>
           </div>
-          <div class="col col-2 col-lg-10">
+          <div class="col col-2 col-lg-8">
             <?php wp_nav_menu(array(
               'theme_location' => 'main',
               'menu_class' => 'menu d-none d-lg-flex',
